@@ -1,0 +1,9 @@
+.question-pad{
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.confirm-question-page{
+    height: 90vh;
+    overflow-y: scroll;
+}
