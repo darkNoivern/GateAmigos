@@ -26,8 +26,13 @@ const SignUp = (props) => {
     const [err, setErr] = useState(false);
     const [userlist, setUserlist] = useState([]);
     const [currentUserName, setCurrentUserName] = useState("");
-
     const [avatarNumber, setAvatarNumber] = useState(1);
+    
+    const [alphaNumberError, setAlphaNumberError] = useState(false);
+
+    function isAlphanumeric(str) {
+        return /^[a-zA-Z0-9_]+$/i.test(str)
+    }
 
     //  FIREBASE
     const usersCollectionRef = collection(db, "userdetails");
@@ -47,6 +52,11 @@ const SignUp = (props) => {
 
     //  SIGNUP FUNCTION
     const signInWithGoogle = () => {
+        
+        if(!isAlphanumeric(currentUserName)){
+            setAlphaNumberError(true);
+            return ;
+        }
 
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
@@ -161,9 +171,9 @@ const SignUp = (props) => {
                     {/* ERROR MESSAGE */}
                     {err === true ? (
                         <>
-                            <div className="alert alert-danger d-flex align-items-center" role="alert">
+                            <div className="alert mouse400 alert-danger d-flex align-items-center" role="alert">
                                 <div>
-                                    <i className="fas fa-exclamation-triangle" />&nbsp;
+                                    <i class="x icon me-2"></i>
                                     Something went wrong TRY AGAIN !!
                                 </div>
                             </div>
@@ -174,10 +184,10 @@ const SignUp = (props) => {
                     {/* ALERT MESSAGE */}
                     {userNameAlert === true ? (
                         <>
-                            <div className="alert alert-warning d-flex align-items-center" role="alert">
+                            <div className="alert mouse400 alert-warning d-flex align-items-center" role="alert">
                                 <div>
-                                    <i className="fas fa-exclamation-triangle" />
-                                    &nbsp; This username is already in database ; Try to &nbsp;
+                                    <i class="info circle icon me-2"></i>
+                                    This username is already in database ; Try to &nbsp;
                                     <Link className="text-dark" exact to="/signin">
                                         Sign In
                                     </Link>
@@ -191,10 +201,10 @@ const SignUp = (props) => {
                     {/* ALERT MESSAGE */}
                     {alert === true ? (
                         <>
-                            <div className="alert alert-warning d-flex align-items-center" role="alert">
+                            <div className="alert mouse400 alert-warning d-flex align-items-center" role="alert">
                                 <div>
-                                    <i className="fas fa-exclamation-triangle" />
-                                    &nbsp;This mail is already in database ; Try to &nbsp;
+                                    <i class="info circle icon me-2"></i>
+                                    This mail is already in database ; Try to &nbsp;
                                     <Link className="text-dark" exact to="/signin">
                                         Sign In
                                     </Link>
@@ -205,10 +215,28 @@ const SignUp = (props) => {
                         <></>
                     )}
 
-                    <div className="my-5">
+                    <div className="mb-5 mt-2">
+                    <div class="alert alert-warning mouse400 d-flex align-items-center my-2" role="alert">
+                            <i class="info icon mb-2 me-2"></i>
+                            <div>
+                                Please use only alphanumeric characters
+                            </div>
+                        </div>
                         <label for="exampleFormControlInput1" className="mouse400 form-label text-white">Username</label>
+                        {(
+                                    alphaNumberError &&
+                                    <div class="alert alert-danger d-flex mouse400 align-items-center my-2" role="alert">
+                                    <i class="x icon mb-2 me-2"></i>
+                                        <div>
+                                            Please use only alphanumeric charcters
+                                        </div>
+                                    </div>
+                                )}
                         <input
-                            onChange={(event) => { setCurrentUserName(event.target.value) }}
+                            onChange={(event) => { 
+                                setCurrentUserName(event.target.value);
+                                setAlphaNumberError(false); 
+                            }}
                             type="text"
                             className="mouse400 form-control bg-amigos text-white username-input"
                             id="exampleFormControlInput1" />

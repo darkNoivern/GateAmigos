@@ -100,9 +100,9 @@ const SignIn = (props) => {
                     {/* ERROR MESSAGE */}
                     {err === true ? (
                         <>
-                            <div className="alert alert-danger d-flex align-items-center" role="alert">
+                            <div className="alert mouse400 alert-danger d-flex align-items-center" role="alert">
                                 <div>
-                                    <i className="fas fa-exclamation-triangle" />&nbsp;
+                                    <i class="x icon me-2"></i>
                                     Something went wrong TRY AGAIN !!
                                 </div>
                             </div>
@@ -114,10 +114,10 @@ const SignIn = (props) => {
                     {/* ALERT MESSAGE */}
                     {alert === true ? (
                         <>
-                            <div className="alert alert-warning d-flex align-items-center" role="alert">
+                            <div className="alert mouse400 alert-warning d-flex align-items-center" role="alert">
                                 <div>
-                                    <i className="fas fa-exclamation-triangle" />
-                                    &nbsp;This mail is not present in database ; Try to &nbsp;
+                                    <i class="x icon me-2"></i>
+                                    This mail is not present in database ; Try to &nbsp;
                                     <Link className="text-valentine" exact to="/signup">
                                         Sign Up
                                     </Link>
