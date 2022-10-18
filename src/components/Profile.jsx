@@ -81,9 +81,8 @@ const Profile = () => {
         });
     }, [id]);
 
-
     return (
-        <div className='page px-3 px-md-5'>
+        <div className='scolling-page px-3 px-md-5'>
             {
                 (user.length > 0) ?
                     <div>

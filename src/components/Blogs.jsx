@@ -48,8 +48,8 @@ const Blogs = () => {
 
     return (
         <>
-            <div className="page px-3 px-md-5">
-                <div className="my-3 text-white">Blog List</div>
+            <div className="blog-page px-3 px-md-5">
+                <div className="my-3 text-gate leaderboard-title mouse400 flexy">Blog List</div>
                 <div>
                     <div className="row mx-0">
                         {

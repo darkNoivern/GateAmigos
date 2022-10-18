@@ -1,3 +1,9 @@
+.blog-page{
+    width: 100vw;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
 .blog-show-card{
     height: 32rem;
     max-width: 23rem;
