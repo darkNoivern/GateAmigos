@@ -23,7 +23,7 @@ const Navbar = (props) => {
     }
 
     return (
-        <nav className="navbar navbar-expand-md navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
                 <Link exact to="/" className="navbar-brand text-white color40 py-2">
                     {/* Jekyll OS */}
@@ -49,7 +49,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Home
                                 </span>
@@ -57,7 +57,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Home
                                 </span>
@@ -68,7 +68,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/problems'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Problems
                                 </span>
@@ -76,7 +76,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/problems'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Problems
                                 </span>
@@ -87,7 +87,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/blogs'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Blogs
                                 </span>
@@ -95,7 +95,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/blogs'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Blogs
                                 </span>
@@ -106,7 +106,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/create'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Create
                                 </span>
@@ -114,7 +114,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/create'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Create
                                 </span>
@@ -125,7 +125,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/chat'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Chat
                                 </span>
@@ -133,7 +133,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/chat'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Chat
                                 </span>
@@ -145,7 +145,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/leaderboard'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Leaderboard
                                 </span>
@@ -153,7 +153,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/leaderboard'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Leaderboard
                                 </span>
@@ -165,7 +165,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/addquestion'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Add Question
                                 </span>
@@ -173,7 +173,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/addquestion'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Add Question
                                 </span>
@@ -186,7 +186,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/confirmquestion'}
                                 activeclassname="active"
-                                className="nav-link d-sm-none">
+                                className="nav-link d-lg-none">
                                 <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                     Confirm Question
                                 </span>
@@ -194,7 +194,7 @@ const Navbar = (props) => {
                             <NavLink
                                 exact to={'/confirmquestion'}
                                 activeclassname="active"
-                                className="nav-link d-none d-sm-block">
+                                className="nav-link d-none d-lg-block">
                                 <span>
                                     Confirm Question
                                 </span>
@@ -211,7 +211,7 @@ const Navbar = (props) => {
                                         <Link
                                             exact to={`/user/${props.username}`}
                                             activeclassname="active"
-                                            className="nav-link d-sm-none px-md-2">
+                                            className="nav-link d-lg-none px-md-2">
                                             <img
                                                 data-bs-target="#navbarNav" data-bs-toggle="collapse"
                                                 className='navbar-profile' src={imgarr[props.avatarid]} alt="profile-pic" />
@@ -219,7 +219,7 @@ const Navbar = (props) => {
                                         <Link
                                             exact to={`/user/${props.username}`}
                                             activeclassname="active"
-                                            className="nav-link d-none d-sm-block px-md-2">
+                                            className="nav-link d-none d-lg-block px-md-2">
                                             <img
                                                 // data-bs-target="#navbarNav" data-bs-toggle="collapse"
                                                 className='navbar-profile' src={imgarr[props.avatarid]} alt="profile-pic" />
@@ -231,7 +231,7 @@ const Navbar = (props) => {
                                             onClick={() => (logout())}
                                             exact to={'/signin'}
                                             activeclassname="active"
-                                            className="nav-link d-sm-none">
+                                            className="nav-link d-lg-none">
                                             <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                                 Logout
                                             </span>
@@ -240,7 +240,7 @@ const Navbar = (props) => {
                                             onClick={() => (logout())}
                                             exact to={'/signin'}
                                             activeclassname="active"
-                                            className="nav-link d-none d-sm-block mt-2">
+                                            className="nav-link d-none d-lg-block mt-2">
                                             <span>
                                                 Logout
                                             </span>
@@ -255,7 +255,7 @@ const Navbar = (props) => {
                                         <NavLink
                                             exact to={'/signin'}
                                             activeclassname="active"
-                                            className="nav-link d-sm-none">
+                                            className="nav-link d-lg-none">
                                             <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                                 SignIn
                                             </span>
@@ -263,7 +263,7 @@ const Navbar = (props) => {
                                         <NavLink
                                             exact to={'/signin'}
                                             activeclassname="active"
-                                            className="nav-link d-none d-sm-block">
+                                            className="nav-link d-none d-lg-block">
                                             <span>
                                                 SignIn
                                             </span>
@@ -274,7 +274,7 @@ const Navbar = (props) => {
                                         <NavLink
                                             exact to={'/signup'}
                                             activeclassname="active"
-                                            className="nav-link d-sm-none">
+                                            className="nav-link d-lg-none">
                                             <span data-bs-target="#navbarNav" data-bs-toggle="collapse">
                                                 SignUp
                                             </span>
@@ -282,7 +282,7 @@ const Navbar = (props) => {
                                         <NavLink
                                             exact to={'/signup'}
                                             activeclassname="active"
-                                            className="nav-link d-none d-sm-block">
+                                            className="nav-link d-none d-lg-block">
                                             <span>
                                                 SignUp
                                             </span>
