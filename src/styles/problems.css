@@ -4,3 +4,8 @@
     border-color: white !important;
 }
 
+.skeleton-problemButton{
+    width: 5rem;
+    border-radius: 0% !important;
+    border: 0 !important;
+}
