@@ -262,7 +262,7 @@ const Question = () => {
                                                                 handleSubmit()
                                                             )}
                                                             disabled
-                                                            className="ui button bg-gate text-white my-4">
+                                                            className="ui button mouse600 bg-gate text-white my-4">
                                                             Submit
                                                         </button>
                                                         :
@@ -270,7 +270,7 @@ const Question = () => {
                                                             onClick={() => (
                                                                 handleSubmit()
                                                             )}
-                                                            className="ui button bg-gate text-white my-4">
+                                                            className="ui button mouse600 bg-gate text-white my-4">
                                                             Submit
                                                         </button>
                                                 }
