@@ -13,7 +13,8 @@ import Problems from './Problems';
 import Question from './Question';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-import Error from './Error';
+// import Error from './Error';
+import Error from './Newerror'
 import Blog from './Blog';
 import Profile from './Profile'
 import Addquestion from './Addquestion';
