@@ -59,7 +59,15 @@ const Addquestion = () => {
 
     return (
         <>
-            <div className="add-question-page px-5 py-4">
+            <div className="add-question-page px-5 pb-4 pt-3">
+
+                <div class="alert alert-warning mouse400 d-flex align-items-center mb-3" role="alert">
+                    <i class="info circle icon mb-2 me-2"></i>
+                    <div>
+                        Your question will display in the problemset after admin approves it.
+                    </div>
+                </div>
+
                 <label for="question" class="mouse400 text-white form-label">Question</label>
                 <textarea
                     type="text"
@@ -108,44 +116,44 @@ const Addquestion = () => {
                         setForm({ ...form, explanation: event.target.value });
                     }}
                     className="mouse400 text-white form-control create-white-blog bg-amigos" />
-                
+
                 <div className='text-white pt-4'>
                     <div className="text-white mouse400">Answer</div>
                     <div class="form-check form-check-inline">
-                        <input 
-                        onClick={()=>{
-                            setForm({ ...form, answer: 0 });
-                            setCheck(true);
-                        }}
-                        class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                        <input
+                            onClick={() => {
+                                setForm({ ...form, answer: 0 });
+                                setCheck(true);
+                            }}
+                            class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
                         <label class="form-check-label" for="inlineRadio1">1</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input 
-                        onClick={()=>{
-                            setForm({ ...form, answer: 1 });
-                            setCheck(true);
-                        }}
-                        class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                        <input
+                            onClick={() => {
+                                setForm({ ...form, answer: 1 });
+                                setCheck(true);
+                            }}
+                            class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
                         <label class="form-check-label" for="inlineRadio2">2</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input 
-                        onClick={()=>{
-                            setForm({ ...form, answer: 2 });
-                            setCheck(true);
-                        }}
-                        class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                        <input
+                            onClick={() => {
+                                setForm({ ...form, answer: 2 });
+                                setCheck(true);
+                            }}
+                            class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
                         <label class="form-check-label" for="inlineRadio3">3</label>
                     </div>
 
                     <div class="form-check form-check-inline">
-                        <input 
-                        onClick={()=>{
-                            setForm({ ...form, answer: 3 });
-                            setCheck(true);
-                        }}
-                        class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3" />
+                        <input
+                            onClick={() => {
+                                setForm({ ...form, answer: 3 });
+                                setCheck(true);
+                            }}
+                            class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3" />
                         <label class="form-check-label" for="inlineRadio4">4</label>
                     </div>
                 </div>
